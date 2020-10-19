@@ -12,14 +12,6 @@ RANDINT - classe da biblioteca "RANDOM", que futuramente nos ajudará a escolher
 
   Em seguida, gerei um dicionário para criar o tabuleiro em que o Jogo da Velha acontecerá. É importante ressaltar que os dicionários em Python funcionam no esquema "chave: valor", portanto geramos nove chaves numeradas de 1-9 assumindo valores em branco, e cada lacuna do dicionário funcionará como um campo do Jogo da Velha.
 Entao criei a funcao printBoard, a fim de printar o tabuleiro do Jogo da Velha atualizado toda vez que fosse necessário no decorrer do código.
-
-É importante ressaltar que, antes que qualquer jogada seja feita, o tabuleiro em branco fica mais ou menos assim:
-
-  | |
- -+-+-
-  | |
- -+-+-
-  | |
   
   Enfim, criei as variáveis "turn", que representa qual jogador deverá fazer uma jogada no respectivo turno e "count" (que contará o número de jogadas que foram feitas). Junto da variável turn, utilizei a classe randint, que sorteará um dos jogadores (X ou O) para comecar jogando a partida. Em seguida, utilizando a classe UUID e a funcao UUID4 (que gera um hash aleatório) atribui a variável "id" o valor do hash que será gerado ao início de cada partida.
   
